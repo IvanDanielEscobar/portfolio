@@ -69,9 +69,6 @@ export default function Footer() {
 
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-zinc-400">
           <p>© {new Date().getFullYear()} Ivan Daniel Escobar. Todos los derechos reservados.</p>
-          <p className="font-mono text-zinc-400">
-            Next.js (App Router) • React 19 • Tailwind CSS • Dark Luxury UI
-          </p>
         </div>
       </div>
     </footer>
