@@ -32,8 +32,8 @@ export const personalData = {
     },
     {
       label: "Proyectos Creados",
-      value: "6 Proyectos",
-      description: "Desarrollados de punta a punta por iniciativa propia o para empresas.",
+      value: "5 Proyectos",
+      description: "Desarrollados de punta a punta por iniciativa propia para aprender y practicar.",
     },
     {
       label: "Infraestructura & GPON",
@@ -202,32 +202,6 @@ export const projectsData = [
       "Carrito lateral deslizable con selector de cantidades y botón para vaciar.",
       "Fichas de producto con descripción y recomendaciones.",
       "Navegación fluida y adaptada a móviles.",
-    ],
-  },
-  {
-    id: "vittas",
-    title: "Vittas Indumentaria",
-    subtitle: "Tienda Online de Moda con Estilo Editorial y Notificaciones Toast",
-    category: "ecommerce",
-    categoryLabel: "E-Commerce",
-    featured: false,
-    badges: ["Next.js", "React 19", "Tailwind CSS", "Cart Drawer", "Toast System"],
-    summary:
-      "Un e-commerce de indumentaria femenina enfocado en cuidar al máximo los detalles visuales, la tipografía y la respuesta interactiva para el usuario.",
-    motivation:
-      "Me desafie a crear un diseño con estilo editorial elegante (inspirado en marcas de moda italianas) y experimentar con notificaciones flotantes (toasts) tras cada acción del usuario.",
-    howItWorks:
-      "Permite recorrer colecciones destacadas (vestidos, calzado, prendas), seleccionar variantes y ver confirmaciones animadas cuando un producto se agrega a la bolsa de compras.",
-    learnings: [
-      "Construcción de un sistema de notificaciones temporizadas (Toasts) sin depender de librerías externas.",
-      "Estructuración de componentes reutilizables y limpios en Next.js.",
-      "Buenas prácticas de contraste, espaciado y legibilidad en diseño web.",
-    ],
-    keyFeatures: [
-      "Diseño visual minimalista y elegante enfocado en la fotografía de producto.",
-      "Carrito desplegable con cálculo en tiempo real del monto total.",
-      "Toasts animados que confirman acciones de forma no invasiva.",
-      "Flujo intuitivo hacia el proceso de compra.",
     ],
   },
 ];

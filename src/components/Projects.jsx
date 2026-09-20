@@ -10,10 +10,10 @@ export default function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
 
   const categories = [
-    { id: "all", label: "Todos (6)" },
+    { id: "all", label: "Todos (5)" },
     { id: "saas", label: "Backend & Django (2)" },
     { id: "fintech", label: "Next.js & APIs (1)" },
-    { id: "ecommerce", label: "E-Commerce (2)" },
+    { id: "ecommerce", label: "E-Commerce (1)" },
     { id: "frontend", label: "Frontend & React (1)" },
   ];
 
@@ -33,7 +33,7 @@ export default function Projects() {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-mono uppercase tracking-wider mb-3">
-              Mis aplicaicones
+              Mis aplicaciones
             </div>
             <h2 className="text-3xl sm:text-4xl font-bold text-white tracking-tight">
               Mis Proyectos Personales
@@ -45,7 +45,7 @@ export default function Projects() {
           </div>
 
           <div className="hidden lg:block text-right font-mono text-xs text-zinc-400">
-            <span className="text-emerald-400 block font-semibold">6 Proyectos de práctica real</span>
+            <span className="text-emerald-400 block font-semibold">5 Proyectos de práctica real</span>
             <span>Frontend, Backend y Despliegue con Docker</span>
           </div>
         </div>

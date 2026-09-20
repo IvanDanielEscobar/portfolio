@@ -7,20 +7,19 @@
 
 Portafolio web personal desarrollado con **Next.js (App Router)**, **React 19** y **Tailwind CSS v4** bajo una estética oscura de alta gama (*Dark Luxury / Modern Obsidian*).
 
-Presenta mi perfil como **estudiante avanzado de la Tecnicatura Superior en Desarrollo de Software (iTec)** y **Técnico en Redes GPON (Fnet System)**, junto con casos de estudio y explicaciones de arquitectura de **6 proyectos reales** que he construido por iniciativa propia.
+Presenta mi perfil como **estudiante avanzado de la Tecnicatura Superior en Desarrollo de Software (iTec)** y **Técnico en Redes GPON (Fnet System)**, junto con casos de estudio y explicaciones de arquitectura de **5 proyectos reales** que he construido por iniciativa propia.
 
 ---
 
 ## 🌟 Características Principales
 
 - **Estética Dark Luxury & UI/UX Moderna**: Paleta obsidiana profunda (`#07080c`) con reflejos radiales en verde esmeralda y cian, tarjetas con efecto *glassmorphism* y micro-interacciones fluidas.
-- **6 Casos de Estudio de Proyectos**:
+- **5 Casos de Estudio de Proyectos**:
   - **StockBase POS**: Micro-SaaS de punto de venta, inventario y cuentas corrientes en Django 6, PostgreSQL y Docker.
   - **EasyBooking**: Sistema de gestión de turnos online 24/7 para salones y barberías.
   - **KromaCore Portal**: Landing institucional y vitrina en React 19 y PrimeReact.
   - **Dolariza2**: Monitor financiero en tiempo real con DolarAPI y revalidación en servidor (ISR).
   - **AutoKlick**: E-Commerce de detailing automotriz con Context API y carrito lateral.
-  - **Vittas Indumentaria**: Boutique digital con diseño editorial y sistema de toasts.
 - **Modales de Arquitectura**: Fichas técnicas interactivas para cada proyecto que explican la motivación, el funcionamiento interno y los aprendizajes técnicos adquiridos (sin exponer código propietario).
 - **Herramientas de Contacto Rápido**: Botones de copiado en un clic para correo y teléfono, enlace directo a WhatsApp y perfil de LinkedIn.
 - **Widget de Hora Local**: Reloj en vivo que muestra la hora actual de Río Cuarto, Córdoba (`GMT-3`).
