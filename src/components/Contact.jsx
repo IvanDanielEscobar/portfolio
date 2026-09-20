@@ -61,7 +61,7 @@ export default function Contact() {
       message: formData.message,
     }).toString();
 
-    fetch("/", {
+    fetch("/__forms.html", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encodedBody,
@@ -254,7 +254,6 @@ export default function Contact() {
                 <form
                   name="contact"
                   method="POST"
-                  data-netlify="true"
                   onSubmit={handleSubmit}
                   className="space-y-4"
                 >

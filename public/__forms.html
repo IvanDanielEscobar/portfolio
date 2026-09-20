@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Netlify Forms Detection</title>
+  </head>
+  <body>
+    <!-- Archivo estático requerido por @netlify/plugin-nextjs@5 para detectar y registrar el formulario sin romper el build de Next.js App Router -->
+    <form name="contact" data-netlify="true" method="POST" hidden>
+      <input type="hidden" name="form-name" value="contact" />
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="text" name="subject" />
+      <textarea name="message"></textarea>
+    </form>
+  </body>
+</html>
+
