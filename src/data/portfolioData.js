@@ -13,8 +13,8 @@ export const personalData = {
     email: "ivanescobar.tfr@gmail.com",
     phone: "+54 9 358 6000456",
     rawPhone: "3586000456",
-    linkedin: "https://www.linkedin.com/in/ivan-daniel-escobar-55493a186",
-    linkedinShort: "linkedin.com/in/ivan-daniel-escobar-55493a186",
+    linkedin: "https://www.linkedin.com/in/ivan-daniel-escobar/",
+    linkedinShort: "linkedin.com/in/ivan-daniel-escobar/",
     whatsappMessage: "¡Hola Ivan! Vi tu portafolio y me gustaría conversar contigo sobre desarrollo de software.",
   },
   bio: {
