@@ -158,6 +158,7 @@ export const projectsData = [
     category: "fintech",
     categoryLabel: "Next.js & APIs",
     featured: true,
+    demoUrl: "https://dolariza2.netlify.app/",
     badges: ["Next.js (App Router)", "React 19", "Server Components", "DolarAPI REST", "Tailwind CSS"],
     summary:
       "Una app web para consultar al instante las cotizaciones del dólar y el euro en Argentina, consumiendo una API pública y aprovechando el renderizado en servidor.",

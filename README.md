@@ -18,7 +18,7 @@ Presenta mi perfil como **estudiante avanzado de la Tecnicatura Superior en Desa
   - **StockBase POS**: Micro-SaaS de punto de venta, inventario y cuentas corrientes en Django 6, PostgreSQL y Docker.
   - **EasyBooking**: Sistema de gestión de turnos online 24/7 para salones y barberías.
   - **KromaCore Portal**: Landing institucional y vitrina en React 19 y PrimeReact.
-  - **Dolariza2**: Monitor financiero en tiempo real con DolarAPI y revalidación en servidor (ISR).
+  - **Dolariza2**: Monitor financiero en tiempo real con DolarAPI y revalidación en servidor (ISR). [Ver Demo en Vivo](https://dolariza2.netlify.app/)
   - **AutoKlick**: E-Commerce de detailing automotriz con Context API y carrito lateral.
 - **Modales de Arquitectura**: Fichas técnicas interactivas para cada proyecto que explican la motivación, el funcionamiento interno y los aprendizajes técnicos adquiridos (sin exponer código propietario).
 - **Herramientas de Contacto Rápido**: Botones de copiado en un clic para correo y teléfono, enlace directo a WhatsApp y perfil de LinkedIn.

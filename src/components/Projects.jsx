@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { projectsData } from "@/data/portfolioData";
 import ProjectModal from "./ProjectModal";
-import { IconArrowRight, IconEye, IconSparkles } from "./Icons";
+import { IconArrowRight, IconEye, IconSparkles, IconArrowUpRight } from "./Icons";
 
 export default function Projects() {
   const [activeCategory, setActiveCategory] = useState("all");
@@ -81,12 +81,27 @@ export default function Projects() {
                   {project.categoryLabel}
                 </span>
 
-                {project.featured && (
-                  <span className="inline-flex items-center gap-1 text-[10px] font-mono text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded-full border border-emerald-500/20">
-                    <IconSparkles className="w-3 h-3" />
-                    Destacado
-                  </span>
-                )}
+                <div className="flex items-center gap-1.5">
+                  {project.demoUrl && (
+                    <a
+                      href={project.demoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-[10px] font-mono text-cyan-300 bg-cyan-500/10 hover:bg-cyan-500/20 px-2.5 py-0.5 rounded-full border border-cyan-500/30 transition-colors"
+                      title="Ver aplicación en vivo en Netlify"
+                    >
+                      <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></span>
+                      <span>Demo en vivo</span>
+                      <IconArrowUpRight className="w-3 h-3" />
+                    </a>
+                  )}
+                  {project.featured && !project.demoUrl && (
+                    <span className="inline-flex items-center gap-1 text-[10px] font-mono text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded-full border border-emerald-500/20">
+                      <IconSparkles className="w-3 h-3" />
+                      Destacado
+                    </span>
+                  )}
+                </div>
               </div>
 
               {/* Title & Description */}
@@ -120,16 +135,30 @@ export default function Projects() {
                   )}
                 </div>
 
-                {/* Card Action Button */}
-                <button
-                  type="button"
-                  onClick={() => setSelectedProject(project)}
-                  className="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl bg-white/[0.04] group-hover:bg-emerald-500/15 border border-white/10 group-hover:border-emerald-500/30 text-xs font-medium text-zinc-200 group-hover:text-emerald-300 transition-all"
-                >
-                  <IconEye className="w-4 h-4" />
-                  <span>Ver detalles & aprendizajes</span>
-                  <IconArrowRight className="w-3.5 h-3.5 ml-auto opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
-                </button>
+                {/* Card Action Buttons */}
+                <div className="flex items-center gap-2">
+                  <button
+                    type="button"
+                    onClick={() => setSelectedProject(project)}
+                    className="flex-1 flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl bg-white/[0.04] group-hover:bg-emerald-500/15 border border-white/10 group-hover:border-emerald-500/30 text-xs font-medium text-zinc-200 group-hover:text-emerald-300 transition-all"
+                  >
+                    <IconEye className="w-4 h-4" />
+                    <span>Ver detalles</span>
+                    <IconArrowRight className="w-3.5 h-3.5 ml-auto opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all" />
+                  </button>
+                  {project.demoUrl && (
+                    <a
+                      href={project.demoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center gap-1.5 py-2.5 px-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-black font-semibold text-xs transition-all shadow-sm shadow-emerald-500/20 active:scale-95 shrink-0"
+                      title="Abrir aplicación en vivo"
+                    >
+                      <span>Demo</span>
+                      <IconArrowUpRight className="w-3.5 h-3.5" />
+                    </a>
+                  )}
+                </div>
               </div>
             </article>
           ))}
