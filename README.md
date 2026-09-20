@@ -96,18 +96,6 @@ portfolio/
 
 ---
 
-## 🌐 Despliegue en Netlify
-
-El proyecto está preparado para desplegarse fácilmente en Netlify:
-
-1. Conecta tu repositorio de GitHub en [Netlify](https://app.netlify.com/).
-2. Configuración de Build sugerida:
-   - **Build command:** `npm run build`
-   - **Publish directory:** `.next`
-3. ¡Listo! Netlify detectará Next.js y publicará el sitio con certificado SSL gratuito.
-
----
-
 ## 📬 Contacto
 
 - **Nombre:** Ivan Daniel Escobar

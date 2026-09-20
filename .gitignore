@@ -1,6 +1,3 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# dependencies
 # Dependencies
 /node_modules
 /.pnp
@@ -11,25 +8,15 @@
 !.yarn/releases
 !.yarn/versions
 
-# testing
-/coverage
-
-# next.js
 # Next.js build output & cache
 /.next/
 /out/
-
-# production
 /build
 .turbo
 
-# misc
-.DS_Store
-*.pem
 # Netlify
 .netlify
 
-# debug
 # Vercel
 .vercel
 
@@ -51,14 +38,10 @@ yarn-error.log*
 .pnpm-debug.log*
 *.log
 
-# env files (can opt-in for committing if needed)
-.env*
 # TypeScript cache
 *.tsbuildinfo
 next-env.d.ts
 
-# vercel
-.vercel
 # Operating System files
 .DS_Store
 .DS_Store?
@@ -69,9 +52,6 @@ ehthumbs.db
 Thumbs.db
 *.pem
 
-# typescript
-*.tsbuildinfo
-next-env.d.ts
 # Editor & IDE configurations
 .idea/
 .vscode/*
