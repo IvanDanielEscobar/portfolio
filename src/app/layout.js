@@ -29,6 +29,15 @@ export const metadata = {
     type: "website",
     locale: "es_AR",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ivan Daniel Escobar | Software Developer & GPON Specialist",
+    description:
+      "Desarrollador Full-Stack y Especialista en Redes GPON. Proyectos Micro-SaaS, Fintech y E-Commerce.",
+  },
+  icons: {
+    icon: "/icon.svg",
+  },
 };
 
 export default function RootLayout({ children }) {

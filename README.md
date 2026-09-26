@@ -73,7 +73,7 @@ portfolio/
 
 1. **Clonar el repositorio:**
    ```bash
-   git clone https://github.com/tu-usuario/portfolio.git
+   git clone https://github.com/IvanDanielEscobar/portfolio.git
    cd portfolio
    ```
 
@@ -100,7 +100,8 @@ portfolio/
 - **Nombre:** Ivan Daniel Escobar
 - **Ubicación:** Río Cuarto, Córdoba, Argentina
 - **Email:** [ivanescobar.tfr@gmail.com](mailto:ivanescobar.tfr@gmail.com)
-- **LinkedIn:** [linkedin.com/in/ivan-daniel-escobar-55493a186](https://www.linkedin.com/in/ivan-daniel-escobar-55493a186)
+- **GitHub:** [github.com/IvanDanielEscobar](https://github.com/IvanDanielEscobar)
+- **LinkedIn:** [linkedin.com/in/ivan-daniel-escobar/](https://www.linkedin.com/in/ivan-daniel-escobar/)
 - **Teléfono:** [+54 9 358 6000456](tel:3586000456)
 
 ---

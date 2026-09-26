@@ -10,7 +10,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
+      setIsScrolled(window.scrollY > 10);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -29,7 +29,9 @@ export default function Navbar() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
-        isScrolled ? "glass-nav py-3.5 shadow-lg shadow-black/40" : "bg-transparent py-5"
+        isScrolled
+          ? "bg-[#07080c]/90 backdrop-blur-2xl border-b border-white/10 py-3.5 shadow-2xl shadow-black/60"
+          : "bg-[#07080c]/40 backdrop-blur-md py-5 border-b border-white/5"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
@@ -112,7 +114,7 @@ export default function Navbar() {
 
       {/* Mobile menu dropdown */}
       {mobileMenuOpen && (
-        <div className="md:hidden glass-nav border-b border-white/10 px-6 py-5 mt-2 transition-all">
+        <div className="md:hidden bg-[#07080c]/95 backdrop-blur-2xl border-b border-white/10 px-6 py-5 mt-2 transition-all shadow-2xl">
           <div className="flex flex-col gap-2">
             {navLinks.map((link) => (
               <a
