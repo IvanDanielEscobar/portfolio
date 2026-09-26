@@ -6,12 +6,14 @@ import {
   IconMail,
   IconPhone,
   IconLinkedIn,
+  IconGitHub,
   IconWhatsApp,
   IconCopy,
   IconCheck,
   IconClock,
   IconMapPin,
   IconSparkles,
+  IconDownload,
 } from "./Icons";
 
 export default function Contact() {
@@ -207,6 +209,55 @@ export default function Contact() {
                   className="px-3.5 py-2 rounded-xl bg-cyan-500/10 hover:bg-cyan-500/20 text-cyan-300 text-xs font-mono font-medium border border-cyan-500/30 transition-all"
                 >
                   Conectar
+                </a>
+              </div>
+            </div>
+
+            {/* GitHub Card */}
+            <div className="glass-card p-6 rounded-3xl border border-white/10 hover:border-white/30 transition-all">
+              <div className="flex items-center justify-between gap-4">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-xl bg-white/[0.05] border border-white/10 flex items-center justify-center text-zinc-200">
+                    <IconGitHub className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <span className="text-xs font-mono text-zinc-400 block">Repositorios & Código</span>
+                    <span className="text-sm font-semibold text-white">GitHub</span>
+                  </div>
+                </div>
+
+                <a
+                  href={personalData.contact.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-3.5 py-2 rounded-xl bg-white/[0.05] hover:bg-white/[0.1] text-zinc-200 hover:text-white text-xs font-mono font-medium border border-white/10 transition-all"
+                >
+                  Ver Perfil
+                </a>
+              </div>
+            </div>
+
+            {/* Curriculum Vitae Download Card */}
+            <div className="glass-card p-6 rounded-3xl border border-emerald-500/20 bg-emerald-500/[0.03] hover:border-emerald-500/40 transition-all">
+              <div className="flex items-center justify-between gap-4">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400">
+                    <IconDownload className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <span className="text-xs font-mono text-emerald-400/80 block">Curriculum Vitae</span>
+                    <span className="text-sm font-semibold text-white">Descargar CV (PDF)</span>
+                  </div>
+                </div>
+
+                <a
+                  href={personalData.contact.cvUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  download="CV-Ivan-Escobar.pdf"
+                  className="px-3.5 py-2 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-black font-semibold text-xs font-mono transition-all shadow-sm shadow-emerald-500/20"
+                >
+                  Descargar
                 </a>
               </div>
             </div>

@@ -51,9 +51,9 @@ export default function About() {
               <strong className="text-white font-medium">Tecnicatura Superior en Desarrollo de Software</strong>.
             </p>
             <p>
-              Actualmente mi trabajo diario como{" "}
+              Actualmente me desempeño como{" "}
               <strong className="text-white font-medium">Técnico de Mantenimiento en Redes GPON</strong> en Fnet System.
-              Diagnosticar enlaces de fibra óptica y resolver problemas de conectividad con clientes esto me ayudo entender qué pasa con los datos cuando viajan por la red física, la latencia y la estabilidad
+              Diagnosticar enlaces de fibra óptica y resolver problemas de conectividad con clientes me ayudó a entender en profundidad qué pasa con los datos cuando viajan por la red física, la latencia y la estabilidad
               de conexión.
             </p>
             <p>

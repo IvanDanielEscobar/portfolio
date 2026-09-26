@@ -15,6 +15,9 @@ export const personalData = {
     rawPhone: "3586000456",
     linkedin: "https://www.linkedin.com/in/ivan-daniel-escobar/",
     linkedinShort: "linkedin.com/in/ivan-daniel-escobar/",
+    github: "https://github.com/IvanDanielEscobar",
+    githubShort: "github.com/IvanDanielEscobar",
+    cvUrl: "/cv-ivan-escobar.pdf",
     whatsappMessage: "¡Hola Ivan! Vi tu portafolio y me gustaría conversar contigo sobre desarrollo de software.",
   },
   bio: {
@@ -45,7 +48,7 @@ export const personalData = {
     {
       title: "Curiosidad Constante por el Código",
       description:
-        "Investigo, leo documentación y desarrollo aplicaciones completas externamente de mis estudios.",
+        "Investigo, leo documentación y desarrollo aplicaciones completas de forma complementaria a mis estudios.",
       icon: "code",
     },
     {
@@ -79,7 +82,7 @@ export const projectsData = [
     featured: true,
     badges: ["Django 6", "Python", "PostgreSQL 16", "Astral uv", "Docker", "Gunicorn"],
     summary:
-      "Un proyecto que esta en desarrollo para desafiarme creando un sistema de mostrador ágil para almacenes y comercios, con inventario en tiempo real y cuentas corrientes.",
+      "Un proyecto que está en desarrollo para desafiarme creando un sistema de mostrador ágil para almacenes y comercios, con inventario en tiempo real y cuentas corrientes.",
     motivation:
       "Quería entender a fondo cómo se construye una arquitectura multi-organización y cómo resolver una necesidad común de los negocios de barrio: despachar rápido en mostrador y llevar registro prolijo de los 'fiados' sin papel.",
     howItWorks:
@@ -107,9 +110,9 @@ export const projectsData = [
     featured: true,
     badges: ["Django 6", "Python", "PostgreSQL 16", "Astral uv", "Docker", "Pillow"],
     summary:
-      "Esta plataforma esta diseñada para que salones de belleza, barberos, tatuadores, etc independientes puedan recibir reservas de turnos las 24 horas sin tener que responder mensajes a deshoras.",
+      "Esta plataforma está diseñada para que salones de belleza, barberos, tatuadores y profesionales independientes puedan recibir reservas de turnos las 24 horas sin tener que responder mensajes a deshoras.",
     motivation:
-      "Charlando con barberos y peluqueros conocidos, vi el tiempo que perdían coordinando horarios por WhatsApp o Hojas de Calculo. Me propuse construir una solución limpia y directa que automatizara todo el proceso.",
+      "Charlando con barberos y peluqueros conocidos, vi el tiempo que perdían coordinando horarios por WhatsApp o planillas de cálculo. Me propuse construir una solución limpia y directa que automatizara todo el proceso.",
     howItWorks:
       "El cliente entra a un enlace web, elige el servicio, el profesional de su preferencia y el día/hora libre según la disponibilidad en tiempo real. Por detrás, el sistema valida que no haya solapamiento de turnos, descuenta la franja horaria y le muestra al administrador su agenda ordenada día a día.",
     learnings: [
@@ -159,6 +162,7 @@ export const projectsData = [
     categoryLabel: "Next.js & APIs",
     featured: true,
     demoUrl: "https://dolariza2.netlify.app/",
+    repoUrl: "https://github.com/IvanDanielEscobar/dolariza2",
     badges: ["Next.js (App Router)", "React 19", "Server Components", "DolarAPI REST", "Tailwind CSS"],
     summary:
       "Una app web para consultar al instante las cotizaciones del dólar y el euro en Argentina, consumiendo una API pública y aprovechando el renderizado en servidor.",

@@ -1,6 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
+  metadataBase: new URL("https://ivanescobarportfolio.netlify.app"),
   title: "Ivan Daniel Escobar | Desarrollador de Software & Especialista en Redes GPON",
   description:
     "Portafolio profesional de Ivan Daniel Escobar. Ingeniería de software full-stack (Django, Python, Next.js, React) y redes de fibra óptica de última milla (GPON/FTTH). Soluciones Micro-SaaS, E-Commerce y Fintech.",

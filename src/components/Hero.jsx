@@ -7,10 +7,12 @@ import {
   IconCopy,
   IconCheck,
   IconLinkedIn,
+  IconGitHub,
   IconWhatsApp,
   IconMail,
   IconMapPin,
   IconSparkles,
+  IconDownload,
 } from "./Icons";
 
 export default function Hero() {
@@ -77,6 +79,18 @@ export default function Hero() {
           </a>
 
           <a
+            href={personalData.contact.cvUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            download="CV-Ivan-Escobar.pdf"
+            className="inline-flex items-center gap-2 px-5 py-3.5 rounded-xl bg-white/[0.04] hover:bg-white/[0.08] border border-white/10 hover:border-emerald-500/40 text-zinc-200 hover:text-white text-sm font-medium transition-all duration-200 hover:-translate-y-0.5"
+            title="Descargar Curriculum Vitae en PDF"
+          >
+            <IconDownload className="w-4 h-4 text-emerald-400" />
+            <span>Descargar CV</span>
+          </a>
+
+          <a
             href="#contacto"
             className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl glass-card text-zinc-200 hover:text-white hover:border-zinc-600 text-sm font-medium transition-all duration-200 hover:-translate-y-0.5"
           >
@@ -106,11 +120,22 @@ export default function Hero() {
           {/* Social Quick Links */}
           <div className="flex items-center gap-2 sm:ml-auto">
             <a
+              href={personalData.contact.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-3 rounded-xl glass-card text-zinc-400 hover:text-white hover:border-white/40 transition-all"
+              aria-label="GitHub de Ivan"
+              title="GitHub"
+            >
+              <IconGitHub className="w-4 h-4" />
+            </a>
+            <a
               href={personalData.contact.linkedin}
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-xl glass-card text-zinc-400 hover:text-cyan-400 hover:border-cyan-500/40 transition-all"
               aria-label="LinkedIn de Ivan"
+              title="LinkedIn"
             >
               <IconLinkedIn className="w-4 h-4" />
             </a>
@@ -122,6 +147,7 @@ export default function Hero() {
               rel="noopener noreferrer"
               className="p-3 rounded-xl glass-card text-zinc-400 hover:text-emerald-400 hover:border-emerald-500/40 transition-all"
               aria-label="WhatsApp de Ivan"
+              title="WhatsApp"
             >
               <IconWhatsApp className="w-4 h-4" />
             </a>
@@ -129,6 +155,7 @@ export default function Hero() {
               href={`mailto:${personalData.contact.email}`}
               className="p-3 rounded-xl glass-card text-zinc-400 hover:text-white hover:border-white/30 transition-all"
               aria-label="Enviar correo a Ivan"
+              title="Email"
             >
               <IconMail className="w-4 h-4" />
             </a>

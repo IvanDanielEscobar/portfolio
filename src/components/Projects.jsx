@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { projectsData } from "@/data/portfolioData";
 import ProjectModal from "./ProjectModal";
-import { IconArrowRight, IconEye, IconSparkles, IconArrowUpRight } from "./Icons";
+import { IconArrowRight, IconEye, IconSparkles, IconArrowUpRight, IconGitHub } from "./Icons";
 
 export default function Projects() {
   const [activeCategory, setActiveCategory] = useState("all");
@@ -154,8 +154,20 @@ export default function Projects() {
                       className="flex items-center justify-center gap-1.5 py-2.5 px-3.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-black font-semibold text-xs transition-all shadow-sm shadow-emerald-500/20 active:scale-95 shrink-0"
                       title="Abrir aplicación en vivo"
                     >
-                      <span>Demo</span>
+                      <span>Probar Aplicacion</span>
                       <IconArrowUpRight className="w-3.5 h-3.5" />
+                    </a>
+                  )}
+                  {project.repoUrl && (
+                    <a
+                      href={project.repoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center justify-center p-2.5 rounded-xl bg-white/[0.04] hover:bg-white/[0.1] text-zinc-300 hover:text-white border border-white/10 transition-all active:scale-95 shrink-0"
+                      title="Ver repositorio en GitHub"
+                      aria-label="Ver repositorio en GitHub"
+                    >
+                      <IconGitHub className="w-4 h-4" />
                     </a>
                   )}
                 </div>
