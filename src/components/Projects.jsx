@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { projectsData } from "@/data/portfolioData";
+import SectionHeader from "./SectionHeader";
 import ProjectModal from "./ProjectModal";
 import { IconArrowRight, IconEye, IconSparkles, IconArrowUpRight, IconGitHub } from "./Icons";
 
@@ -30,25 +31,19 @@ export default function Projects() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
-          <div>
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-mono uppercase tracking-wider mb-3">
-              Mis aplicaciones
+        <SectionHeader
+          badge="Mis aplicaciones"
+          badgeColor="cyan"
+          title="Mis Proyectos Personales"
+          description="Aplicaciones que construí para poner a prueba lo aprendido en la carrera, explorar nuevas tecnologías y resolver necesidades concretas."
+          className="mb-12"
+          rightContent={
+            <div className="hidden lg:block text-right font-mono text-xs text-zinc-400">
+              <span className="text-emerald-400 block font-semibold">5 Proyectos de práctica real</span>
+              <span>Frontend, Backend y Despliegue con Docker</span>
             </div>
-            <h2 className="text-3xl sm:text-4xl font-bold text-white tracking-tight">
-              Mis Proyectos Personales
-            </h2>
-            <p className="text-sm text-zinc-400 mt-2 max-w-2xl">
-              Aplicaciones que construí para poner a prueba lo aprendido en la carrera,
-              explorar nuevas tecnologías y resolver necesidades concretas.
-            </p>
-          </div>
-
-          <div className="hidden lg:block text-right font-mono text-xs text-zinc-400">
-            <span className="text-emerald-400 block font-semibold">5 Proyectos de práctica real</span>
-            <span>Frontend, Backend y Despliegue con Docker</span>
-          </div>
-        </div>
+          }
+        />
 
         {/* Category Filters */}
         <div className="flex flex-wrap items-center gap-2 mb-10 pb-2 border-b border-white/5">
@@ -109,7 +104,7 @@ export default function Projects() {
                 <h3 className="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors mb-1.5">
                   {project.title}
                 </h3>
-                <p className="text-xs font-mono text-zinc-400 mb-3 line-clamp-1">
+                <p className="text-xs font-mono text-zinc-400 mb-3 line-clamp-2 min-h-[2.5rem]">
                   {project.subtitle}
                 </p>
                 <p className="text-xs text-zinc-300 leading-relaxed line-clamp-3">

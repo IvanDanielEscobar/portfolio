@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { personalData } from "@/data/portfolioData";
+import SectionHeader from "./SectionHeader";
 import {
   IconMail,
   IconPhone,
@@ -88,18 +89,12 @@ export default function Contact() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-mono uppercase tracking-wider mb-3">
-            ¡Siempre en contacto!
-          </div>
-          <h2 className="text-3xl sm:text-4xl font-bold text-white tracking-tight">
-            Charlemos sobre tecnología o proyectos
-          </h2>
-          <p className="text-sm text-zinc-400 mt-2 max-w-xl">
-            ¿Tienes alguna oportunidad laboral, buscas colaborar en un proyecto o simplemente quieres intercambiar ideas
-            sobre desarrollo? ¡Escríbeme con total confianza!
-          </p>
-        </div>
+        <SectionHeader
+          badge="¡Siempre en contacto!"
+          badgeColor="emerald"
+          title="Charlemos sobre tecnología o proyectos"
+          description="¿Tienes alguna oportunidad laboral, buscas colaborar en un proyecto o simplemente quieres intercambiar ideas sobre desarrollo? ¡Escríbeme con total confianza!"
+        />
 
         {/* Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
@@ -277,7 +272,7 @@ export default function Contact() {
 
                 <div className="flex items-center gap-2 px-3 py-1.5 rounded-xl bg-black/40 border border-white/5 font-mono text-xs text-emerald-400 w-fit">
                   <IconClock className="w-3.5 h-3.5 text-zinc-400" />
-                  <span>{localTime || "--:--:--"}</span>
+                  <span>{localTime ? `${localTime} (GMT-3)` : "--:--:--"}</span>
                 </div>
               </div>
             </div>
@@ -311,10 +306,12 @@ export default function Contact() {
                   <input type="hidden" name="form-name" value="contact" />
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                      <label className="block text-xs font-mono text-zinc-300 mb-1.5">
+                      <label htmlFor="contact-name" className="block text-xs font-mono text-zinc-300 mb-1.5">
                         Tu nombre
                       </label>
                       <input
+                        id="contact-name"
+                        name="name"
                         type="text"
                         required
                         value={formData.name}
@@ -325,10 +322,12 @@ export default function Contact() {
                     </div>
 
                     <div>
-                      <label className="block text-xs font-mono text-zinc-300 mb-1.5">
+                      <label htmlFor="contact-email" className="block text-xs font-mono text-zinc-300 mb-1.5">
                         Tu correo electrónico
                       </label>
                       <input
+                        id="contact-email"
+                        name="email"
                         type="email"
                         required
                         value={formData.email}
@@ -340,10 +339,12 @@ export default function Contact() {
                   </div>
 
                   <div>
-                    <label className="block text-xs font-mono text-zinc-300 mb-1.5">
+                    <label htmlFor="contact-subject" className="block text-xs font-mono text-zinc-300 mb-1.5">
                       Asunto
                     </label>
                     <input
+                      id="contact-subject"
+                      name="subject"
                       type="text"
                       required
                       value={formData.subject}
@@ -354,10 +355,12 @@ export default function Contact() {
                   </div>
 
                   <div>
-                    <label className="block text-xs font-mono text-zinc-300 mb-1.5">
+                    <label htmlFor="contact-message" className="block text-xs font-mono text-zinc-300 mb-1.5">
                       Mensaje
                     </label>
                     <textarea
+                      id="contact-message"
+                      name="message"
                       rows={4}
                       required
                       value={formData.message}

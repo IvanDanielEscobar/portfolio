@@ -1,4 +1,5 @@
 import { experienceData } from "@/data/portfolioData";
+import SectionHeader from "./SectionHeader";
 import { IconMapPin, IconClock, IconCheckCircle } from "./Icons";
 
 export default function Experience() {
@@ -6,18 +7,12 @@ export default function Experience() {
     <section id="trayectoria" className="py-24 relative overflow-hidden bg-[#07080c]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-mono uppercase tracking-wider mb-3">
-            Mi Camino Laboral
-          </div>
-          <h2 className="text-3xl sm:text-4xl font-bold text-white tracking-tight">
-            Experiencias Reales que me Formaron
-          </h2>
-          <p className="text-sm text-zinc-400 mt-2 max-w-2xl">
-            Antes y durante mis estudios en software, trabajé en logística masiva y telecomunicaciones.
-            Estas experiencias me dieron la responsabilidad, la disciplina y el temple para resolver problemas reales.
-          </p>
-        </div>
+        <SectionHeader
+          badge="Mi Camino Laboral"
+          badgeColor="emerald"
+          title="Experiencias Reales que me Formaron"
+          description="Antes y durante mis estudios en software, trabajé en logística masiva y telecomunicaciones. Estas experiencias me dieron la responsabilidad, la disciplina y el temple para resolver problemas reales."
+        />
 
         {/* Timeline */}
         <div className="relative border-l border-zinc-800 ml-4 sm:ml-6 space-y-12">
