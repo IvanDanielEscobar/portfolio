@@ -1,6 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
+  metadataBase: new URL("https://ivanescobarportfolio.netlify.app"),
   title: "Ivan Daniel Escobar | Desarrollador de Software & Especialista en Redes GPON",
   description:
     "Portafolio profesional de Ivan Daniel Escobar. Ingeniería de software full-stack (Django, Python, Next.js, React) y redes de fibra óptica de última milla (GPON/FTTH). Soluciones Micro-SaaS, E-Commerce y Fintech.",
@@ -27,6 +28,15 @@ export const metadata = {
       "Desarrollador Full-Stack y Especialista en Redes GPON. Proyectos Micro-SaaS, Fintech y E-Commerce.",
     type: "website",
     locale: "es_AR",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ivan Daniel Escobar | Software Developer & GPON Specialist",
+    description:
+      "Desarrollador Full-Stack y Especialista en Redes GPON. Proyectos Micro-SaaS, Fintech y E-Commerce.",
+  },
+  icons: {
+    icon: "/icon.svg",
   },
 };
 

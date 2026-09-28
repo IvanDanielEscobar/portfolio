@@ -8,6 +8,7 @@ import {
   IconLayers,
   IconShield,
   IconArrowUpRight,
+  IconGitHub,
 } from "./Icons";
 
 export default function ProjectModal({ project, onClose }) {
@@ -133,7 +134,7 @@ export default function ProjectModal({ project, onClose }) {
 
         {/* Footer Note & Demo Button */}
         <div className="mt-8 pt-5 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-zinc-400">
-          <div className="flex items-center gap-3 w-full sm:w-auto">
+          <div className="flex flex-wrap items-center gap-3 w-full sm:w-auto">
             {project.demoUrl && (
               <a
                 href={project.demoUrl}
@@ -141,11 +142,22 @@ export default function ProjectModal({ project, onClose }) {
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-black font-semibold text-xs transition-all shadow-md shadow-emerald-500/20 active:scale-95"
               >
-                <span>Probar Aplicación en Vivo</span>
+                <span>Probar Aplicación</span>
                 <IconArrowUpRight className="w-3.5 h-3.5" />
               </a>
             )}
-            <span className="font-mono text-zinc-400 hidden md:inline">
+            {project.repoUrl && (
+              <a
+                href={project.repoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-white/[0.05] hover:bg-white/[0.1] text-zinc-200 hover:text-white font-medium text-xs border border-white/10 transition-all active:scale-95"
+              >
+                <IconGitHub className="w-4 h-4" />
+                <span>Ver Código en GitHub</span>
+              </a>
+            )}
+            <span className="font-mono text-zinc-400 hidden lg:inline">
               Proyecto de aprendizaje • Ivan Daniel Escobar
             </span>
           </div>

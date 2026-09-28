@@ -1,7 +1,8 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { IconMenu, IconClose, IconSparkles } from "./Icons";
+import { personalData } from "@/data/portfolioData";
+import { IconMenu, IconClose, IconSparkles, IconGitHub, IconDownload } from "./Icons";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -9,7 +10,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
+      setIsScrolled(window.scrollY > 10);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -28,7 +29,9 @@ export default function Navbar() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
-        isScrolled ? "glass-nav py-3.5 shadow-lg shadow-black/40" : "bg-transparent py-5"
+        isScrolled
+          ? "bg-[#07080c]/90 backdrop-blur-2xl border-b border-white/10 py-3.5 shadow-2xl shadow-black/60"
+          : "bg-[#07080c]/40 backdrop-blur-md py-5 border-b border-white/5"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
@@ -64,11 +67,34 @@ export default function Navbar() {
           ))}
         </nav>
 
-        {/* Action Button */}
-        <div className="hidden md:flex items-center gap-3">
+        {/* Action Buttons */}
+        <div className="hidden md:flex items-center gap-2.5">
+          <a
+            href={personalData.contact.cvUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            download="CV-Ivan-Escobar.pdf"
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-mono text-zinc-300 hover:text-white bg-white/[0.04] hover:bg-white/[0.08] border border-white/10 rounded-xl transition-all"
+            title="Descargar CV"
+          >
+            <IconDownload className="w-3.5 h-3.5 text-emerald-400" />
+            <span>CV</span>
+          </a>
+
+          <a
+            href={personalData.contact.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-2 text-zinc-400 hover:text-white bg-white/[0.04] hover:bg-white/[0.08] border border-white/10 rounded-xl transition-all"
+            title="Perfil de GitHub"
+            aria-label="GitHub"
+          >
+            <IconGitHub className="w-4 h-4" />
+          </a>
+
           <a
             href="#contacto"
-            className="inline-flex items-center gap-2 px-4 py-2 text-xs font-medium text-emerald-400 bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-500/30 hover:border-emerald-500/50 rounded-xl transition-all shadow-sm hover:shadow-emerald-500/20 active:scale-95"
+            className="inline-flex items-center gap-2 px-3.5 py-1.5 text-xs font-medium text-emerald-400 bg-emerald-500/10 hover:bg-emerald-500/20 border border-emerald-500/30 hover:border-emerald-500/50 rounded-xl transition-all shadow-sm hover:shadow-emerald-500/20 active:scale-95"
           >
             <IconSparkles className="w-3.5 h-3.5" />
             ¡Contacto!
@@ -88,7 +114,7 @@ export default function Navbar() {
 
       {/* Mobile menu dropdown */}
       {mobileMenuOpen && (
-        <div className="md:hidden glass-nav border-b border-white/10 px-6 py-5 mt-2 transition-all">
+        <div className="md:hidden bg-[#07080c]/95 backdrop-blur-2xl border-b border-white/10 px-6 py-5 mt-2 transition-all shadow-2xl">
           <div className="flex flex-col gap-2">
             {navLinks.map((link) => (
               <a
@@ -100,7 +126,26 @@ export default function Navbar() {
                 {link.name}
               </a>
             ))}
-            <div className="pt-3 mt-2 border-t border-white/10">
+            <div className="pt-3 mt-2 border-t border-white/10 flex flex-col gap-2">
+              <a
+                href={personalData.contact.cvUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                download="CV-Ivan-Escobar.pdf"
+                className="w-full flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-medium text-zinc-200 bg-white/[0.05] border border-white/10 rounded-xl"
+              >
+                <IconDownload className="w-4 h-4 text-emerald-400" />
+                Descargar CV (PDF)
+              </a>
+              <a
+                href={personalData.contact.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full flex items-center justify-center gap-2 px-4 py-2.5 text-sm font-medium text-zinc-300 bg-white/[0.03] border border-white/10 rounded-xl"
+              >
+                <IconGitHub className="w-4 h-4" />
+                Ver GitHub
+              </a>
               <a
                 href="#contacto"
                 onClick={() => setMobileMenuOpen(false)}

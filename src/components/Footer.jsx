@@ -1,7 +1,7 @@
 "use client";
 
 import { personalData } from "@/data/portfolioData";
-import { IconChevronUp, IconLinkedIn, IconWhatsApp, IconMail } from "./Icons";
+import { IconChevronUp, IconLinkedIn, IconGitHub, IconWhatsApp, IconMail } from "./Icons";
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -29,6 +29,15 @@ export default function Footer() {
 
           {/* Social Links */}
           <div className="flex items-center gap-4">
+            <a
+              href={personalData.contact.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white transition-colors"
+              aria-label="GitHub"
+            >
+              <IconGitHub className="w-4 h-4" />
+            </a>
             <a
               href={personalData.contact.linkedin}
               target="_blank"
