@@ -1,5 +1,4 @@
 import { skillsData } from "@/data/portfolioData";
-import SectionHeader from "./SectionHeader";
 import { IconCode, IconNetwork, IconShield } from "./Icons";
 
 export default function Skills() {
@@ -25,12 +24,18 @@ export default function Skills() {
     <section id="habilidades" className="py-24 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Title */}
-        <SectionHeader
-          badge="Mi Caja de Herramientas"
-          badgeColor="purple"
-          title="Tecnologías, Redes & Habilidades del Trabajo Real"
-          description="Lo que uso para desarrollar mis proyectos, lo que aprendo en la carrera y las competencias humanas que incorporé trabajando más de 5 años en equipo."
-        />
+        <div className="mb-16">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-purple-500/10 border border-purple-500/20 text-purple-400 text-xs font-mono uppercase tracking-wider mb-3">
+            Mi Caja de Herramientas
+          </div>
+          <h2 className="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+            Tecnologías, Redes & Habilidades del Trabajo Real
+          </h2>
+          <p className="text-sm text-zinc-400 mt-2 max-w-2xl">
+            Lo que uso para desarrollar mis proyectos, lo que aprendo en la carrera y las competencias humanas
+            que incorporé trabajando más de 5 años en equipo.
+          </p>
+        </div>
 
         {/* 3 Cards Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">

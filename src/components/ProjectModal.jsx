@@ -35,19 +35,14 @@ export default function ProjectModal({ project, onClose }) {
       />
 
       {/* Modal Card */}
-      <div
-        className="relative w-full max-w-3xl my-8 glass-card border border-white/15 rounded-3xl p-6 sm:p-8 shadow-2xl shadow-black/80 z-10 max-h-[90vh] overflow-y-auto bg-[#0d0f17]"
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby="modal-project-title"
-      >
+      <div className="relative w-full max-w-3xl my-8 glass-card border border-white/15 rounded-3xl p-6 sm:p-8 shadow-2xl shadow-black/80 z-10 max-h-[90vh] overflow-y-auto bg-[#0d0f17]">
         {/* Header bar */}
         <div className="flex items-start justify-between gap-4 mb-6 border-b border-white/10 pb-5">
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/25 text-emerald-400 text-xs font-mono mb-2">
               {project.categoryLabel}
             </div>
-            <h3 id="modal-project-title" className="text-2xl sm:text-3xl font-bold text-white tracking-tight">
+            <h3 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">
               {project.title}
             </h3>
             <p className="text-xs sm:text-sm text-zinc-400 mt-1">{project.subtitle}</p>
@@ -81,7 +76,7 @@ export default function ProjectModal({ project, onClose }) {
           <div>
             <h4 className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-emerald-400 mb-2.5">
               <IconShield className="w-4 h-4" />
-              ¿Por qué lo creé y qué problema quise resolver?
+              ¿Por qué lo creé & Qué problema quise resolver?
             </h4>
             <p className="leading-relaxed text-zinc-300 bg-white/[0.02] p-4 rounded-2xl border border-white/5">
               {project.motivation}

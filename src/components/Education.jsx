@@ -1,5 +1,4 @@
 import { educationData, awardsData } from "@/data/portfolioData";
-import SectionHeader from "./SectionHeader";
 import { IconAward, IconMapPin, IconClock, IconSparkles } from "./Icons";
 
 export default function Education() {
@@ -7,17 +6,22 @@ export default function Education() {
     <section id="educacion" className="py-24 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <SectionHeader
-          badge="Formación Académica"
-          badgeColor="cyan"
-          title="Mis Estudios & Reconocimientos"
-          description="Mi formación técnica terciaria en software, mi educación secundaria con bases de comunicación y mis distinciones académicas provinciales."
-        />
+        <div className="mb-16">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-mono uppercase tracking-wider mb-3">
+            Formación Académica
+          </div>
+          <h2 className="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+            Mis Estudios & Logros
+          </h2>
+          <p className="text-sm text-zinc-400 mt-2 max-w-2xl">
+            Mi formación técnica terciaria en software y el secundario que me dio bases sólidas de comunicación y pensamiento crítico.
+          </p>
+        </div>
 
         {/* Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           {/* Main Education Cards */}
-          <div className="lg:col-span-7 space-y-6">
+          <div className="lg:col-span-8 space-y-6">
             {educationData.map((edu, idx) => (
               <div
                 key={idx}
@@ -52,60 +56,29 @@ export default function Education() {
             ))}
           </div>
 
-          {/* Reinforced Award Card */}
-          <div className="lg:col-span-5">
+          {/* Side Award Card */}
+          <div className="lg:col-span-4">
             <div className="glass-card rounded-3xl p-6 sm:p-8 border border-purple-500/30 bg-purple-950/10 relative overflow-hidden">
-              <div className="absolute -top-12 -right-12 w-48 h-48 bg-purple-500/10 rounded-full blur-3xl pointer-events-none" />
+              <div className="w-12 h-12 rounded-2xl bg-purple-500/20 border border-purple-500/30 flex items-center justify-center mb-6">
+                <IconAward className="w-6 h-6 text-purple-300" />
+              </div>
 
-              <div className="flex items-center justify-between gap-4 mb-6">
-                <div className="w-12 h-12 rounded-2xl bg-purple-500/20 border border-purple-500/30 flex items-center justify-center">
-                  <IconAward className="w-6 h-6 text-purple-300" />
-                </div>
-                <span className="inline-flex items-center gap-1.5 text-xs font-mono text-purple-300 bg-purple-500/10 border border-purple-500/20 px-3 py-1 rounded-full">
-                  <IconSparkles className="w-3.5 h-3.5" />
-                  Mérito Académico
-                </span>
+              <div className="inline-flex items-center gap-1.5 text-xs font-mono text-purple-300 mb-2">
+                <IconSparkles className="w-3.5 h-3.5" />
+                Reconocimiento Académico
               </div>
 
               {awardsData.map((award, aIdx) => (
-                <div key={aIdx} className="space-y-4">
-                  <div>
-                    <h4 className="text-lg font-bold text-white leading-snug mb-2">
-                      {award.title}
-                    </h4>
-                    <div className="flex flex-wrap items-center gap-2">
-                      <span className="text-xs font-mono text-purple-300 bg-purple-500/15 px-2.5 py-1 rounded-lg border border-purple-500/30">
-                        {award.distinction}
-                      </span>
-                      <span className="text-xs font-mono text-zinc-400 bg-white/[0.04] px-2.5 py-1 rounded-lg border border-white/10">
-                        {award.date}
-                      </span>
-                    </div>
-                  </div>
-
-                  <p className="text-xs sm:text-sm text-zinc-300 leading-relaxed">
+                <div key={aIdx} className="space-y-3">
+                  <h4 className="text-lg font-bold text-white leading-snug">
+                    {award.title}
+                  </h4>
+                  <span className="inline-block text-xs font-mono text-purple-400 bg-purple-500/10 px-2.5 py-1 rounded-lg border border-purple-500/20">
+                    {award.category}
+                  </span>
+                  <p className="text-xs text-zinc-300 leading-relaxed pt-2">
                     {award.description}
                   </p>
-
-                  {/* Issuing Institutions Breakdown */}
-                  <div className="pt-2 border-t border-purple-500/20">
-                    <span className="block text-[11px] font-mono uppercase tracking-wider text-purple-300/80 mb-2">
-                      Avales e Instituciones Emisoras
-                    </span>
-                    <div className="space-y-2">
-                      {award.institutions.map((inst, iIdx) => (
-                        <div
-                          key={iIdx}
-                          className="p-2.5 rounded-xl bg-black/40 border border-purple-500/15 text-xs"
-                        >
-                          <div className="font-semibold text-zinc-200">{inst.name}</div>
-                          <div className="text-[11px] text-zinc-400 font-mono mt-0.5">
-                            {inst.dept}
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
                 </div>
               ))}
             </div>

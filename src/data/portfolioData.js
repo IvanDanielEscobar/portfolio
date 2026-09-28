@@ -4,7 +4,7 @@
 export const personalData = {
   name: "Ivan Daniel Escobar",
   nickname: "Ivan",
-  role: "Desarrollador Full Stack & Técnico de Mantenimiento en Redes GPON",
+  role: "Desarrollador FullStack & Técnico de Mantenimiento en Redes GPON",
   institution: "iTec Instituto Tecnológico Río Cuarto",
   location: "Río Cuarto, Córdoba, Argentina",
   timeZone: "America/Argentina/Cordoba",
@@ -24,8 +24,8 @@ export const personalData = {
     greeting: "¡Hola! Soy Ivan 👋",
     lead: "Estudiante de la Tecnicatura Superior en Desarrollo de Software en iTec y Técnico de Mantenimiento en Redes GPON. Apasionado por transformar la curiosidad en código y resolver problemas reales.",
     story:
-      "Mi día a día combina el estudio constante en el instituto tecnológico con la labor técnica en redes GPON de fibra óptica en Fnet System, donde fortalezco a diario mi lógica de análisis y la atención al detalle diagnosticando conectividad con clientes. Anteriormente, mi paso de más de 5 años por el sector operativo de Correo Argentino me formó en responsabilidad, trabajo en equipo y cumplimiento de procesos bajo presión. Todo mi tiempo libre lo dedico a programar: aprender nuevas tecnologías, leer documentación y construir proyectos completos para consolidarme profesionalmente en la industria del software.",
-    closing: "¡Siempre con iniciativa para aprender, colaborar en equipo y dar el salto profesional en desarrollo de software!",
+      "Mi día a día combina el estudio constante en el instituto tecnológico con la práctica técnica como técnico en redes GPON de fibra óptica en Fnet System, donde fortalezco a diario mi lógica de análisis y la atención al detalle diagnosticando conectividad con clientes. Anteriormente, mi paso de más de 5 años por el sector operativo de Correo Argentino me formó en responsabilidad, trabajo en equipo y cumplimiento de procesos bajo presión. Todo mi tiempo libre lo dedico a programar: aprender nuevas tecnologías, leer documentación y construir proyectos completos para consolidarme profesionalmente en la industria del software.",
+    closing: "¡Siempre con ganas de aprender cosas nuevas, colaborar en equipo para dar el salto como desarrollador!",
   },
   highlights: [
     {
@@ -48,7 +48,7 @@ export const personalData = {
     {
       title: "Curiosidad Constante por el Código",
       description:
-        "Investigo, leo documentación y desarrollo aplicaciones completas en paralelo a mis estudios académicos.",
+        "Investigo, leo documentación y desarrollo aplicaciones completas de forma complementaria a mis estudios.",
       icon: "code",
     },
     {
@@ -66,7 +66,7 @@ export const personalData = {
     {
       title: "Pensamiento Analítico & Lógico",
       description:
-        "Me gusta descomponer problemas complejos en partes sencillas y lógicas, una habilidad que cultivo desde mi participación en la Olimpíada de Estadística de Córdoba (UNRC).",
+        "Me gusta descomponer problemas complejos en partes sencillas y lógicas, una habilidad que pulí desde mi participación en la olimpiada de estadística.",
       icon: "analytics",
     },
   ],
@@ -82,11 +82,11 @@ export const projectsData = [
     featured: true,
     badges: ["Django 6", "Python", "PostgreSQL 16", "Astral uv", "Docker", "Gunicorn"],
     summary:
-      "Sistema desarrollado para optimizar la atención en mostrador de comercios locales, integrando inventario en tiempo real y cuentas corrientes.",
+      "Un proyecto que está en desarrollo para desafiarme creando un sistema de mostrador ágil para almacenes y comercios, con inventario en tiempo real y cuentas corrientes.",
     motivation:
       "Quería entender a fondo cómo se construye una arquitectura multi-organización y cómo resolver una necesidad común de los negocios de barrio: despachar rápido en mostrador y llevar registro prolijo de los 'fiados' sin papel.",
     howItWorks:
-      "Diseñé el backend en Django separando la lógica en aplicaciones limpias y modulares. Implementé un punto de venta pensado para usarse con atajos de teclado o lector de código de barras, un control de existencias que descuenta stock al momento y un módulo de cuenta corriente que registra deudas, abonos parciales e historial cronológico de compras.",
+      "Diseñé el backend en Django separando la lógica en aplicaciones limpias. Implementé un POS rápido pensado para usarse con teclado y un lector de código de barras, un control de existencias que descuenta stock al momento y un módulo de cuenta corriente que registra deudas, abonos parciales e historial cronológico de compras.",
     learnings: [
       "Diseño de modelos relacionales en PostgreSQL con claves foráneas e índices para búsquedas veloces.",
       "Manejo de entornos reproducibles ultrarrápidos con Astral `uv` en Python.",
@@ -110,9 +110,9 @@ export const projectsData = [
     featured: true,
     badges: ["Django 6", "Python", "PostgreSQL 16", "Astral uv", "Docker", "Pillow"],
     summary:
-      "Plataforma diseñada para que salones de estética, barberías y profesionales independientes gestionen sus turnos las 24 horas sin fricciones ni mensajes a deshoras.",
+      "Esta plataforma está diseñada para que salones de belleza, barberos, tatuadores y profesionales independientes puedan recibir reservas de turnos las 24 horas sin tener que responder mensajes a deshoras.",
     motivation:
-      "Charlando con barberos y peluqueros conocidos, vi el tiempo que perdían coordinando horarios por WhatsApp o en hojas de cálculo. Me propuse construir una solución limpia y directa que automatizara todo el proceso.",
+      "Charlando con barberos y peluqueros conocidos, vi el tiempo que perdían coordinando horarios por WhatsApp o planillas de cálculo. Me propuse construir una solución limpia y directa que automatizara todo el proceso.",
     howItWorks:
       "El cliente entra a un enlace web, elige el servicio, el profesional de su preferencia y el día/hora libre según la disponibilidad en tiempo real. Por detrás, el sistema valida que no haya solapamiento de turnos, descuenta la franja horaria y le muestra al administrador su agenda ordenada día a día.",
     learnings: [
@@ -137,7 +137,7 @@ export const projectsData = [
     featured: true,
     badges: ["React 19", "Vite", "PrimeReact", "PrimeIcons", "Nginx", "Docker"],
     summary:
-      "Sitio web diseñado y programado en React 19 para presentar mis proyectos de software bajo una identidad visual moderna, escalable y profesional.",
+      "Un sitio web que diseñé y programé en React 19 para presentar mis proyectos de software con una identidad visual moderna y profesional bajo una firma.",
     motivation:
       "Tenía varios proyectos en mente y quería crear un 'hogar digital' donde agruparlos, practicar maquetación moderna en React y aprender a usar la librería de componentes PrimeReact.",
     howItWorks:
@@ -163,7 +163,7 @@ export const projectsData = [
     featured: true,
     demoUrl: "https://dolariza2.netlify.app/",
     repoUrl: "https://github.com/IvanDanielEscobar/dolariza2",
-    badges: ["Next.js (App Router)", "React 19", "Server Components", "Tailwind CSS", "REST API"],
+    badges: ["Next.js (App Router)", "React 19", "Server Components", "DolarAPI REST", "Tailwind CSS"],
     summary:
       "Una app web para consultar al instante las cotizaciones del dólar y el euro en Argentina, consumiendo una API pública y aprovechando el renderizado en servidor.",
     motivation:
@@ -318,30 +318,9 @@ export const educationData = [
 
 export const awardsData = [
   {
-    title: "Olimpíada de Estadística de la Provincia de Córdoba",
-    eventCode: "OEC",
-    distinction: "Alumno Concursante (Instancia Provincial)",
-    category: "Categoría F • Nivel Provincial",
-    field: "Lógica, Estadística & Razonamiento Cuantitativo",
-    date: "26 de Octubre de 2012",
-    institutions: [
-      {
-        name: "Universidad Nacional de Río Cuarto (UNRC)",
-        dept: "Facultad de Ciencias Exactas, Físico-Químicas y Naturales",
-        signatory: "Dra. Rosa Cattana (Decana)",
-      },
-      {
-        name: "Ministerio de Educación de Córdoba",
-        dept: "Secretaría de Educación",
-        signatory: "Prof. Walter Grahovac (Ministro)",
-      },
-      {
-        name: "Ministerio de Ciencia y Tecnología de Córdoba",
-        dept: "Dirección de Divulgación y Enseñanza de las Ciencias",
-        signatory: "Ing. Roger H. Illanes (Ministro)",
-      },
-    ],
+    title: "Mención en Olimpiada de Estadística",
+    category: "Lógica & Razonamiento Matemático",
     description:
-      "Certificación oficial de distinción como Alumno Concursante en la instancia provincial de la Olimpíada de Estadística de Córdoba (OEC), avalada conjuntamente por la Universidad Nacional de Río Cuarto (UNRC) y los Ministerios de Educación y de Ciencia y Tecnología de Córdoba. Un reconocimiento temprano que consolidó mi vocación por el análisis numérico, el rigor lógico y el pensamiento estructurado.",
+      "Participación destacada en la olimpiada de estadística, un logro que me motivó a confiar en mi capacidad analítica para resolver problemas numéricos y estructurar datos.",
   },
 ];
