@@ -4,7 +4,7 @@
 export const personalData = {
   name: "Ivan Daniel Escobar",
   nickname: "Ivan",
-  role: "Desarrollador Full Stack & Técnico de Mantenimiento en Redes GPON",
+  role: "Desarrollador FullStack & Técnico de Mantenimiento en Redes GPON",
   institution: "iTec Instituto Tecnológico Río Cuarto",
   location: "Río Cuarto, Córdoba, Argentina",
   timeZone: "America/Argentina/Cordoba",
@@ -24,8 +24,8 @@ export const personalData = {
     greeting: "¡Hola! Soy Ivan 👋",
     lead: "Estudiante de la Tecnicatura Superior en Desarrollo de Software en iTec y Técnico de Mantenimiento en Redes GPON. Apasionado por transformar la curiosidad en código y resolver problemas reales.",
     story:
-      "Mi día a día combina el estudio constante en el instituto tecnológico con la labor técnica en redes GPON de fibra óptica en Fnet System, donde fortalezco a diario mi lógica de análisis y la atención al detalle diagnosticando conectividad con clientes. Anteriormente, mi paso de más de 5 años por el sector operativo de Correo Argentino me formó en responsabilidad, trabajo en equipo y cumplimiento de procesos bajo presión. Todo mi tiempo libre lo dedico a programar: aprender nuevas tecnologías, leer documentación y construir proyectos completos para consolidarme profesionalmente en la industria del software.",
-    closing: "¡Siempre con iniciativa para aprender, colaborar en equipo y dar el salto profesional en desarrollo de software!",
+      "Mi día a día combina el estudio constante en el instituto tecnológico con la práctica técnica como técnico en redes GPON de fibra óptica en Fnet System, donde fortalezco a diario mi lógica de análisis y la atención al detalle diagnosticando conectividad con clientes. Anteriormente, mi paso de más de 5 años por el sector operativo de Correo Argentino me formó en responsabilidad, trabajo en equipo y cumplimiento de procesos bajo presión. Todo mi tiempo libre lo dedico a programar: aprender nuevas tecnologías, leer documentación y construir proyectos completos para consolidarme profesionalmente en la industria del software.",
+    closing: "¡Siempre con ganas de aprender cosas nuevas, colaborar en equipo para dar el salto como desarrollador!",
   },
   highlights: [
     {
@@ -35,8 +35,8 @@ export const personalData = {
     },
     {
       label: "Proyectos Creados",
-      value: "5 Proyectos",
-      description: "Desarrollados de punta a punta por iniciativa propia para aprender y practicar.",
+      value: "7+ Proyectos",
+      description: "Proyectos personales y educacionales desarrollados con arquitectura robusta.",
     },
     {
       label: "Infraestructura & GPON",
@@ -48,7 +48,7 @@ export const personalData = {
     {
       title: "Curiosidad Constante por el Código",
       description:
-        "Investigo, leo documentación y desarrollo aplicaciones completas en paralelo a mis estudios académicos.",
+        "Investigo, leo documentación y desarrollo aplicaciones completas de forma complementaria a mis estudios.",
       icon: "code",
     },
     {
@@ -76,138 +76,96 @@ export const projectsData = [
   {
     id: "stockbase",
     title: "StockBase POS",
-    subtitle: "Sistema de Punto de Venta, Control de Inventario & Cuentas Corrientes",
-    category: "saas",
-    categoryLabel: "Backend & Django",
-    featured: true,
-    badges: ["Django 6", "Python", "PostgreSQL 16", "Astral uv", "Docker", "Gunicorn"],
-    summary:
-      "Sistema desarrollado para optimizar la atención en mostrador de comercios locales, integrando inventario en tiempo real y cuentas corrientes.",
-    motivation:
-      "Quería entender a fondo cómo se construye una arquitectura multi-organización y cómo resolver una necesidad común de los negocios de barrio: despachar rápido en mostrador y llevar registro prolijo de los 'fiados' sin papel.",
-    howItWorks:
-      "Diseñé el backend en Django separando la lógica en aplicaciones limpias y modulares. Implementé un punto de venta pensado para usarse con atajos de teclado o lector de código de barras, un control de existencias que descuenta stock al momento y un módulo de cuenta corriente que registra deudas, abonos parciales e historial cronológico de compras.",
-    learnings: [
-      "Diseño de modelos relacionales en PostgreSQL con claves foráneas e índices para búsquedas veloces.",
-      "Manejo de entornos reproducibles ultrarrápidos con Astral `uv` en Python.",
-      "Contenerización con Docker y Docker Compose para correr web y base de datos con un solo comando.",
-      "Importación masiva de planillas de productos usando `django-import-export`.",
-    ],
-    keyFeatures: [
-      "Punto de venta súper ágil para cobrar rápido en mostrador.",
-      "Control de inventario con aviso cuando queda poco stock de un producto.",
-      "Gestión de cuentas corrientes para saber exactamente cuánto debe cada cliente.",
-      "Módulo de compras a proveedores para actualizar costos y precios.",
-      "Aislamiento para que varios comercios o sucursales puedan usarlo de forma independiente.",
-    ],
+    subtitle: "Sistema Multi-Tenant de Punto de Venta, Caja & Cuentas Corrientes",
+    type: "personal",
+    typeLabel: "Proyecto Personal",
+    badges: ["Django", "Python", "PostgreSQL", "Docker", "Tailwind CSS", "REST API", "Gunicorn", "Astral uv"],
+    description:
+      "Sistema SaaS integral y multi-tenant de punto de venta (POS), control de inventario y cuentas corrientes para comercios minoristas y mayoristas. Diseñado bajo la arquitectura de Capa de Servicios ('Skinny Views, Fat Services') con Django 5, DRF y PostgreSQL 16. Incorpora un mostrador ágil con atajos de teclado y medios de pago puros/mixtos (Efectivo, Débito, QR, Cta Cte), gestión de turnos de caja con arqueo ciego, emisión de tickets térmicos (80mm) para control interno no fiscal, protección inflacionaria mediante congelamiento de costo histórico, módulo de cuentas corrientes (fiado) con límites de crédito auditados, consola de administración SaaS (Platform Hub 360°) con métricas de salud (Health Score), API REST v1 desacoplada con SimpleJWT lista para aplicaciones móviles y una suite completa de 122 tests automatizados (100% OK).",
+    isPrivate: true,
+    demoUrl: null,
+    repoUrl: null,
   },
   {
     id: "easybooking",
-    title: "EasyBooking",
-    subtitle: "Plataforma de Reserva de Turnos Online",
-    category: "saas",
-    categoryLabel: "Backend & Django",
-    featured: true,
-    badges: ["Django 6", "Python", "PostgreSQL 16", "Astral uv", "Docker", "Pillow"],
-    summary:
-      "Plataforma diseñada para que salones de estética, barberías y profesionales independientes gestionen sus turnos las 24 horas sin fricciones ni mensajes a deshoras.",
-    motivation:
-      "Charlando con barberos y peluqueros conocidos, vi el tiempo que perdían coordinando horarios por WhatsApp o en hojas de cálculo. Me propuse construir una solución limpia y directa que automatizara todo el proceso.",
-    howItWorks:
-      "El cliente entra a un enlace web, elige el servicio, el profesional de su preferencia y el día/hora libre según la disponibilidad en tiempo real. Por detrás, el sistema valida que no haya solapamiento de turnos, descuenta la franja horaria y le muestra al administrador su agenda ordenada día a día.",
-    learnings: [
-      "Algoritmos de cálculo de franjas horarias y validaciones de concurrencia para evitar turnos duplicados.",
-      "Estructuración de vistas y formularios limpios en Django.",
-      "Procesamiento y optimización de imágenes de fotos de perfil y servicios con Pillow.",
-      "Configuración de base de datos PostgreSQL 16 lista para producción en Docker.",
-    ],
-    keyFeatures: [
-      "Los clientes pueden reservar su turno a cualquier hora del día desde el teléfono.",
-      "Soporte para múltiples profesionales, cada uno con sus propios horarios y descansos.",
-      "Catálogo con duración estimada y precio de cada corte o tratamiento.",
-      "Panel de control para ver la agenda del día, de la semana y el historial de clientes.",
-    ],
+    title: "EasyBooking by KromaCore",
+    subtitle: "Micro-SaaS de Reservas Online 24/7 & Gestión Multi-Salón",
+    type: "personal",
+    typeLabel: "Proyecto Personal",
+    badges: ["Django", "Python", "PostgreSQL", "Docker", "Gunicorn", "Astral uv"],
+    description:
+      "Micro-SaaS inteligente de reservas online 24/7 y gestión multi-salón para barberías, salones de estética y profesionales independientes. Desarrollado con Django 6, Astral uv y PostgreSQL 16 (en producción vía Docker Compose y Gunicorn con 3 workers). Implementa un motor algorítmico de cálculo dinámico de franjas horarias con validación de concurrencia para evitar solapamientos de turnos, panel administrativo para la organización de agendas y suite de pruebas unitarias integradas.",
+    isPrivate: true,
+    demoUrl: null,
+    repoUrl: null,
   },
   {
     id: "kromacore",
-    title: "KromaCore Portal",
-    subtitle: "Landing Institucional para mis Proyectos de Software",
-    category: "frontend",
-    categoryLabel: "Frontend & React",
-    featured: true,
-    badges: ["React 19", "Vite", "PrimeReact", "PrimeIcons", "Nginx", "Docker"],
-    summary:
-      "Sitio web diseñado y programado en React 19 para presentar mis proyectos de software bajo una identidad visual moderna, escalable y profesional.",
-    motivation:
-      "Tenía varios proyectos en mente y quería crear un 'hogar digital' donde agruparlos, practicar maquetación moderna en React y aprender a usar la librería de componentes PrimeReact.",
-    howItWorks:
-      "Es una Single Page Application (SPA) armada con Vite y React 19. Cuenta con secciones para mostrar las características de los proyectos, tablas de comparación de planes y botones de contacto que derivan directamente a WhatsApp o correo.",
-    learnings: [
-      "Uso de React 19 con Vite para lograr un empaquetado ultra ligero y veloz.",
-      "Personalización de temas oscuros en PrimeReact (`lara-dark-cyan`).",
-      "Creación de un Dockerfile multi-stage con Nginx Alpine para servir archivos estáticos con bajo consumo de memoria.",
-    ],
-    keyFeatures: [
-      "Diseño moderno en modo oscuro con acentos cian y tipografía nítida.",
-      "Tarjetas interactivas con detalles de las herramientas desarrolladas.",
-      "Canales de contacto directo para consultas y presupuestos.",
-      "Configuración lista para desplegar en cualquier servidor con Docker.",
-    ],
+    title: "KromaCore Landing Page",
+    subtitle: "Landing Institucional & Ecosistema de Soluciones de Software",
+    type: "personal",
+    typeLabel: "Proyecto Personal",
+    badges: ["React", "Vite", "PrimeReact", "Docker", "Nginx", "PrimeFlex"],
+    description:
+      "Sitio web y landing institucional de KromaCore desarrollado con React 19 y Vite (JavaScript puro). Presenta el ecosistema integral de soluciones tecnológicas de la firma, exhibiendo los micro-SaaS StockBase POS y EasyBooking, planes de suscripción y canales de contacto directo (WhatsApp y correo). Construido con la suite de componentes de PrimeReact (Menubar, Button, InputText, Toast, Card, Badge), estilos personalizados sobre el tema lara-dark-cyan con la paleta de marca (#0E1117, #00FFFF, #FF7A00) y despliegue contenerizado mediante Docker con Nginx Alpine multi-stage build listo para producción.",
+    demoUrl: "https://kromacoredev.com/",
+    demoLabel: "Sitio Web en Vivo",
+    isPrivate: true,
+    repoUrl: null,
   },
   {
     id: "dolariza2",
     title: "Dolariza2",
-    subtitle: "Monitor de Cotizaciones de Monedas en Tiempo Real",
-    category: "fintech",
-    categoryLabel: "Next.js & APIs",
-    featured: true,
+    subtitle: "Monitor de Cotizaciones Financieras en Tiempo Real",
+    type: "personal",
+    typeLabel: "Proyecto Personal",
     demoUrl: "https://dolariza2.netlify.app/",
     repoUrl: "https://github.com/IvanDanielEscobar/dolariza2",
-    badges: ["Next.js (App Router)", "React 19", "Server Components", "Tailwind CSS", "REST API"],
-    summary:
-      "Una app web para consultar al instante las cotizaciones del dólar y el euro en Argentina, consumiendo una API pública y aprovechando el renderizado en servidor.",
-    motivation:
-      "En Argentina las cotizaciones cambian constantemente. Quise crear una herramienta práctica para mí y mis conocidos, mientras exploraba las novedades del App Router de Next.js y el consumo de APIs en Server Components.",
-    howItWorks:
-      "La aplicación hace peticiones en el servidor a DolarAPI y revalida los datos cada 60 segundos (ISR). Esto permite que el usuario vea la información casi al instante sin sobrecargar de llamadas innecesarias a la API externa.",
-    learnings: [
-      "Estrategias de caching y revalidación (`revalidate: 60`) con Next.js App Router.",
-      "Diferencias prácticas entre Client Components y Server Components en React 19.",
-      "Manejo de errores y fallbacks en llamadas a APIs de terceros.",
-      "Maquetación rápida y limpia con Tailwind CSS.",
-    ],
-    keyFeatures: [
-      "Visualización clara del dólar oficial, blue, tarjeta, MEP, CCL y euro.",
-      "Diferenciación instantánea entre precios de compra y venta.",
-      "Hora exacta de la última actualización oficial de la cotización.",
-      "Carga ultrarrápida y optimizada para ver desde el celular.",
-    ],
+    badges: ["Next.js", "React", "Tailwind CSS", "REST API"],
+    description:
+      "Aplicación web financiera para consultar en tiempo real las cotizaciones del dólar (oficial, blue, tarjeta, MEP, CCL) y euro en Argentina. Consume la API pública DolarAPI y aprovecha el renderizado en servidor de Next.js (App Router) junto con revalidación periódica (ISR) para ofrecer tiempos de carga mínimos y datos actualizados.",
+  },
+  {
+    id: "homedeco",
+    title: "Home & Deco",
+    subtitle: "E-Commerce Full Stack & Sistema de Gestión Comercial",
+    type: "educational",
+    typeLabel: "Proyecto Educacional",
+    badges: ["Next.js", "React", "Django", "Python", "PostgreSQL", "Docker", "Tailwind CSS", "REST API"],
+    description:
+      "Plataforma completa de comercio electrónico y gestión comercial desarrollada de punta a punta (Full Stack) para una fábrica y tienda de muebles modernos en Río Cuarto, integrando las cátedras de Programación III e Ingeniería de Software (ITEC). El frontend en Next.js 16 y Tailwind CSS v4 ofrece catálogo interactivo con filtros por ambiente y madera, carrito lateral (Context API), autenticación JWT con control de roles (Admin, Empleado, Cliente), panel administrativo (Dashboard) con CRUD de muebles y pedidos, validaciones con Zod y React Hook Form, y testing con Vitest. El backend en Django REST Framework y PostgreSQL 16 implementa 10 modelos relacionales, reglas de negocio de cancelación (límite 24hs), congelamiento de precios, borrado lógico/físico, documentación OpenAPI 3.0 (Swagger UI / ReDoc) y 12 tests unitarios. Desplegado y operativo en Vercel (Frontend) y Render (Backend API).",
+    demoUrl: "https://efi-programacion-iii.vercel.app",
+    demoLabel: "E-Commerce en Vivo (Vercel)",
+    apiUrl: "https://homedeco-backend.onrender.com/api",
+    repoUrl: "https://github.com/IvanDanielEscobar/EFI-ProgramacionIII",
+    repoBackendUrl: "https://github.com/IvanDanielEscobar/EFI-IngenieriaDeSoftware",
+  },
+  {
+    id: "radarurbano",
+    title: "Radar Urbano",
+    subtitle: "Red Vecinal de Prevención & Geolocalización de Incidencias",
+    type: "educational",
+    typeLabel: "Proyecto Educacional",
+    badges: ["React", "Vite", "Tailwind CSS", "Leaflet", "OpenStreetMap", "WCAG AA"],
+    description:
+      "Evaluación Final Integradora (EFI) para la Cátedra de Interfaz de Usuario (ITEC Río Cuarto). Single Page Application (SPA) colaborativa y mobile-first construida bajo estándares estrictos de accesibilidad universal (WCAG AA 1.4.1) para la prevención ciudadana y auxilio comunitario en Río Cuarto. Integra cartografía open source con Leaflet y OpenStreetMap (modo oscuro adaptativo), geocercas geodésicas (fórmula de Haversine con radios dinámicos de 1 a 15 km), simbología geométrica universal para usuarios con daltonismo, botón de pánico SOS con retención de 1.5s y respuesta háptica (Ley de Fitts), ergonomía integral para zurdos, compresión de fotos en cliente mediante Canvas HTML5 y sistema de gamificación cívica con reputación barrial y cupones de descuento.",
+    demoUrl: "https://efi-interaz-de-usuario.vercel.app/",
+    demoLabel: "Aplicación en Vivo (Vercel)",
+    docsUrl: "https://docs.google.com/document/d/1eqap2D5Huw8SKxRVbw4Clj_6ofckJ26YL6qH6NdJank/edit?usp=sharing",
+    repoUrl: "https://github.com/IvanDanielEscobar/EFI-InterazDeUsuario",
   },
   {
     id: "autoklick",
     title: "AutoKlick",
-    subtitle: "Catálogo & E-Commerce para Cuidado Automotor y Accesorios",
-    category: "ecommerce",
-    categoryLabel: "E-Commerce",
-    featured: false,
-    badges: ["Next.js", "React 19", "Tailwind CSS", "Context API", "Responsive"],
-    summary:
-      "Una tienda online temática orientada a productos de estética vehicular, donde implementé un carrito de compras interactivo y navegación por categorías.",
-    motivation:
-      "Me gustan los autos y el detailing, así que fue la excusa ideal para diseñar una experiencia de e-commerce completa y aprender a gestionar el estado global del carrito con Context API.",
-    howItWorks:
-      "El usuario puede navegar entre artículos de lavado, ceras y accesorios, ver fotos y detalles técnicos, y sumar productos a un carrito lateral deslizable que calcula el total sin tener que recargar la página.",
-    learnings: [
-      "Manejo de estado global en React con `createContext` y `useContext` para el carrito de compras.",
-      "Rutas dinámicas en Next.js (`/producto/[slug]`) para renderizar fichas de producto.",
-      "Diseño de interfaces atractivas con Tailwind CSS adaptadas a pantallas pequeñas.",
-    ],
-    keyFeatures: [
-      "Catálogo dividido por categorías de detailing y confort.",
-      "Carrito lateral deslizable con selector de cantidades y botón para vaciar.",
-      "Fichas de producto con descripción y recomendaciones.",
-      "Navegación fluida y adaptada a móviles.",
-    ],
+    subtitle: "E-Commerce de Accesorios & Repuestos Vehiculares",
+    type: "personal",
+    typeLabel: "Proyecto Personal",
+    badges: ["Next.js", "React", "Tailwind CSS", "Context API", "Turbopack"],
+    description:
+      "Plataforma moderna de comercio electrónico especializada en la comercialización de accesorios y repuestos automotores, desarrollada con Next.js 16 (App Router con Turbopack) y Tailwind CSS con paleta personalizada de marca. Diseñada para máxima velocidad y conversión local, incorpora catálogo dinámico con fichas de producto (/producto/[id]), carrito de compras flotante (CartSidebar) con persistencia vía React Context API, cálculo dinámico de subtotales y un flujo de checkout inteligente con generación automática de orden única (#AK) y derivación de pedidos preformateados directo a WhatsApp para pagos en efectivo o transferencias.",
+    isPrivate: true,
+    demoUrl: null,
+    repoUrl: null,
   },
 ];
 

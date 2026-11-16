@@ -242,11 +242,141 @@ export function IconDownload({ className = "w-5 h-5" }) {
   );
 }
 
+export function IconLock({ className = "w-4 h-4" }) {
+  return (
+    <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+      <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+      <path d="M7 11V7a5 5 0 0110 0v4" />
+    </svg>
+  );
+}
+
 export function IconFileText({ className = "w-5 h-5" }) {
   return (
     <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
       <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
     </svg>
   );
+}
+
+export function IconPython({ className = "w-5 h-5" }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+      <path d="M11.914 0C5.833 0 6.207 2.64 6.207 2.64l.007 2.735h5.811v.823H3.948S0 5.753 0 11.884c0 6.13 3.447 5.922 3.447 5.922h2.057v-2.883s-.11-3.447 3.39-3.447h5.804s3.284.05 3.284-3.235V2.64S18.497 0 11.914 0zM8.7 1.703a1.05 1.05 0 1 1 0 2.1 1.05 1.05 0 0 1 0-2.1zm3.386 22.297c6.081 0 5.707-2.64 5.707-2.64l-.007-2.735h-5.811v-.823h8.077S24 18.247 24 12.116c0-6.13-3.447-5.922-3.447-5.922h-2.057v2.883s.11 3.447-3.39 3.447h-5.804s-3.284-.05-3.284 3.235v5.586S5.503 24 12.086 24zm3.214-1.703a1.05 1.05 0 1 1 0-2.1 1.05 1.05 0 0 1 0 2.1z" />
+    </svg>
+  );
+}
+
+export function IconDjango({ className = "w-5 h-5" }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+      <path d="M11.146 0h3.324v16.143c-.707.126-1.54.188-2.373.188-3.375 0-4.99-1.59-4.99-4.667 0-3.153 1.79-4.896 4.039-4.896.783 0 1.54.148 2.05.378V3.27C12.686 3.12 11.98 3.02 11.17 3.02c-4.47 0-7.37 2.92-7.37 7.74 0 5.16 2.97 7.76 7.42 7.76 1.44 0 2.45-.15 3.25-.43v4.91H11.146V0zM19.066 7.185h3.324v11.08h-3.324V7.185zm0-4.165h3.324v2.793h-3.324V3.02z" />
+    </svg>
+  );
+}
+
+export function IconDocker({ className = "w-5 h-5" }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+      <path d="M13.983 11.078h2.119a.186.186 0 00.186-.185V9.006a.186.186 0 00-.186-.186h-2.119a.185.185 0 00-.185.185v1.888c0 .102.083.185.185.185m-2.954-5.43h2.118a.186.186 0 00.186-.186V3.574a.186.186 0 00-.186-.185h-2.118a.185.185 0 00-.185.185v1.888c0 .102.082.186.185.186zm0 2.715h2.118a.186.186 0 00.186-.186V6.289a.186.186 0 00-.186-.186h-2.118a.185.185 0 00-.185.186v1.888c0 .102.082.186.185.186zm-2.953 0h2.118a.186.186 0 00.186-.186V6.289a.186.186 0 00-.186-.186H8.076a.185.185 0 00-.185.186v1.888c0 .102.083.186.185.186zm-2.954 0h2.119a.186.186 0 00.186-.186V6.289a.186.186 0 00-.186-.186H5.122a.185.185 0 00-.185.186v1.888c0 .102.083.186.185.186zM23.79 12.3c-.45-.294-1.424-.424-2.316-.246-.17-.798-.679-1.503-1.391-1.921l-.41-.24-.265.385c-.482.702-.674 1.62-.572 2.502-.37-.058-.75-.084-1.134-.084H1.365a1.14 1.14 0 00-1.14 1.14c0 .356.096.702.277 1.004C1.944 17.26 5.534 20.4 12.087 20.4c8.414 0 11.233-4.992 11.776-7.39l.067-.3a.138.138 0 00-.14-.41" />
+    </svg>
+  );
+}
+
+export function IconPostgreSQL({ className = "w-5 h-5" }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 2C6.48 2 2 4.24 2 7v10c0 2.76 4.48 5 10 5s10-2.24 10-5V7c0-2.76-4.48-5-10-5zm0 2c4.42 0 8 1.57 8 3s-3.58 3-8 3-8-1.57-8-3 3.58-3 8-3zm8 8.6c-1.62 1.17-4.6 1.9-8 1.9s-6.38-.73-8-1.9V9.82C5.62 10.99 8.6 11.72 12 11.72s6.38-.73 8-1.9v2.78zm0 5c-1.62 1.17-4.6 1.9-8 1.9s-6.38-.73-8-1.9v-2.78c1.62 1.17 4.6 1.9 8 1.9s6.38-.73 8-1.9v2.78z" />
+    </svg>
+  );
+}
+
+export function IconReact({ className = "w-5 h-5" }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8}>
+      <ellipse cx="12" cy="12" rx="10" ry="4.5" transform="rotate(0 12 12)" />
+      <ellipse cx="12" cy="12" rx="10" ry="4.5" transform="rotate(60 12 12)" />
+      <ellipse cx="12" cy="12" rx="10" ry="4.5" transform="rotate(120 12 12)" />
+      <circle cx="12" cy="12" r="2" fill="currentColor" />
+    </svg>
+  );
+}
+
+export function IconNextjs({ className = "w-5 h-5" }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 0C5.37 0 0 5.37 0 12c0 6.63 5.37 12 12 12 6.63 0 12-5.37 12-12C24 5.37 18.63 0 12 0zm5.82 17.55l-6.72-8.66v8.66H9.36V6.45h1.98l6.72 8.68V6.45h1.74v11.1h-1.98z" />
+    </svg>
+  );
+}
+
+export function IconTailwind({ className = "w-5 h-5" }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.336 6.182 14.975 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.336 13.382 8.975 12 6.001 12z" />
+    </svg>
+  );
+}
+
+export function IconVite({ className = "w-5 h-5" }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+      <path d="M23.014 3.037L12.59 23.498a.72.72 0 01-1.278.016L.986 3.037a.72.72 0 01.815-1.025l10.22 2.012 10.178-2.012a.72.72 0 01.815 1.025z" />
+    </svg>
+  );
+}
+
+export function IconNginx({ className = "w-5 h-5" }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 0L1.608 6v12L12 24l10.392-6V6L12 0zm5.184 16.512h-2.328l-5.64-7.512v7.512H6.84V7.488h2.328l5.64 7.512V7.488h2.376v9.024z" />
+    </svg>
+  );
+}
+
+export function IconNodejs({ className = "w-5 h-5" }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 1.5a1.8 1.8 0 00-.9.25l-8.4 4.85a1.8 1.8 0 00-.9 1.56v9.68a1.8 1.8 0 00.9 1.56l8.4 4.85a1.8 1.8 0 001.8 0l8.4-4.85a1.8 1.8 0 00.9-1.56V8.16a1.8 1.8 0 00-.9-1.56l-8.4-4.85a1.8 1.8 0 00-.9-.25z" />
+    </svg>
+  );
+}
+
+export function IconFlask({ className = "w-5 h-5" }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M9 3h6M10 3v5L4 19a2 2 0 002 2h12a2 2 0 002-2l-6-11V3" />
+    </svg>
+  );
+}
+
+export function IconMySQL({ className = "w-5 h-5" }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}>
+      <ellipse cx="12" cy="6" rx="8" ry="3" />
+      <path d="M4 6v6c0 1.66 3.58 3 8 3s8-1.34 8-3V6" />
+      <path d="M4 12v6c0 1.66 3.58 3 8 3s8-1.34 8-3v-6" />
+    </svg>
+  );
+}
+
+export function TechIcon({ name = "", className = "w-4 h-4" }) {
+  const n = (name || "").toLowerCase();
+  if (n.includes("python")) return <IconPython className={className} />;
+  if (n.includes("django")) return <IconDjango className={className} />;
+  if (n.includes("postgres")) return <IconPostgreSQL className={className} />;
+  if (n.includes("mysql")) return <IconMySQL className={className} />;
+  if (n.includes("docker")) return <IconDocker className={className} />;
+  if (n.includes("next")) return <IconNextjs className={className} />;
+  if (n.includes("react") || n.includes("primereact")) return <IconReact className={className} />;
+  if (n.includes("tailwind")) return <IconTailwind className={className} />;
+  if (n.includes("vite")) return <IconVite className={className} />;
+  if (n.includes("nginx")) return <IconNginx className={className} />;
+  if (n.includes("node")) return <IconNodejs className={className} />;
+  if (n.includes("flask")) return <IconFlask className={className} />;
+  if (n.includes("api") || n.includes("gunicorn")) return <IconServer className={className} />;
+  if (n.includes("map") || n.includes("leaflet")) return <IconMapPin className={className} />;
+  if (n.includes("wcag") || n.includes("accesib")) return <IconShield className={className} />;
+  return <IconCode className={className} />;
 }
 
